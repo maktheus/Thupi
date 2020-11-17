@@ -7,6 +7,7 @@ module.exports={
         const {name,ph} = req.body;
         var referencia =firebase.database().ref('data/'+name);
         referencia.set({
+            name:name,
             ph:ph
           }); 
         return res.json(req.body); 
