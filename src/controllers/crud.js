@@ -4,11 +4,13 @@ const Data = require('../models/Data')
 
 module.exports={
     async store(req,res){
-        const {name,ph} = req.body;
+        const {name,ph,Temp,humidity} = req.body;
         var referencia =firebase.database().ref('data/'+name);
         referencia.set({
             name:name,
-            ph:ph
+            ph:ph,
+            Temp:Temp,
+            humidity:humidity,
           }); 
         return res.json(req.body); 
     },
