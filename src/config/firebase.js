@@ -1,9 +1,9 @@
 module.exports = {
-        apiKey: process.env.FIREBASE_API_KEY,
-        authDomain: "thupi-2020.firebaseapp.com",
-        databaseURL: "https://thupi-2020.firebaseio.com",
-        projectId: "thupi-2020",
-        storageBucket: "thupi-2020.appspot.com",
-        messagingSenderId: "569487345547",
-        appId: process.env.FIREBASE_API_ID
+        apiKey: "AIzaSyAkeEfnaCvlcy4j_HPQDhVXMQGniotS0ts",
+        authDomain: "projetodosmanos-16e92.firebaseapp.com",
+        databaseURL: "https://projetodosmanos-16e92.firebaseio.com",
+        projectId: "projetodosmanos-16e92",
+        storageBucket: "projetodosmanos-16e92.appspot.com",
+        messagingSenderId: "526642367714",
+        appId: "1:526642367714:web:4d4932180ce4935b7462bb"
 }
