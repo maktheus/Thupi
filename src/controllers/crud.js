@@ -16,8 +16,7 @@ module.exports={
         return res.json(req.body); 
     },
     async read(req,res){  
-        var referencia = firebase.database().ref('data');
-         referencia.on('value', function(snapshot) {
+        firebase.database().ref('data').once('value', function(snapshot) {
             const response = snapshot.val();
             return res.json(response);
           });
