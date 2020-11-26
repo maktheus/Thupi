@@ -3,6 +3,7 @@ const firebaseConfig = require('../config/firebase');
 const Data = require('../models/Data')
 
 module.exports={
+  //teste
     async store(req,res){
         const {name,ph,Temp,humidity} = req.body;
         var referencia =firebase.database().ref('data/'+name);
